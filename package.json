@@ -12,11 +12,29 @@
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf dist",
+    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only src/server.ts",
+    "build": "tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "start": "node dist/server.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tree": "npx tree -l 4 --ignore 'node_modules/,dist/,build/,test/,.git'"
   },
   "homepage": "https://github.com/ngkhang/e-commerce-node-ts#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ngkhang/e-commerce-node-ts.git"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.8",
+    "rimraf": "^6.1.2",
+    "ts-node-dev": "^2.0.0",
+    "tsc-alias": "^1.8.16",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.3"
   }
 }
