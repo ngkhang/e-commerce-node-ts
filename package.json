@@ -1,0 +1,22 @@
+{
+  "name": "e-commerce-node-ts",
+  "version": "1.0.0",
+  "description": "The e-commerce application built with Node.js and TypeScript",
+  "keywords": [
+    "nodejs",
+    "express.js",
+    "typescript"
+  ],
+  "license": "ISC",
+  "author": "Khang Nguyen",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/ngkhang/e-commerce-node-ts#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngkhang/e-commerce-node-ts.git"
+  }
+}
