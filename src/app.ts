@@ -1,20 +1,20 @@
 /**
- * @Author Khang Nguyen
- * Github https://github.com/ngkhang
- * Lasted Update January 14 2026
+ * @author Khang Nguyen
+ * @link https://github.com/ngkhang
+ * @filename app.ts
+ * Lasted Update: 2026-01-14
  */
-
 import express from 'express';
 
 export const createApp = () => {
   const app = express();
 
-  app.get("/health", (req, res) => {
+  app.get('/health', (req, res) => {
     return res.status(200).json({
       status: 200,
-      message: "OK",
+      message: 'OK'
     });
   });
 
   return app;
-}
+};

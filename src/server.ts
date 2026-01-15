@@ -1,4 +1,11 @@
-import { createApp } from "./app";
+/**
+ * @author Khang Nguyen
+ * @link https://github.com/ngkhang
+ * @filename server.ts
+ * Lasted Update: 2026-01-15
+ */
+
+import { createApp } from './app';
 
 const HOST = 'localhost';
 const PORT = 3300;
@@ -11,5 +18,5 @@ const PORT = 3300;
 })()
   .catch((e) => {
     console.error(e);
-    process.exit(1)
-  })
+    process.exit(1);
+  });
