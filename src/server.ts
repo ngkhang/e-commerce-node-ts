@@ -1,10 +1,8 @@
-/**
- * @author Khang Nguyen
- * @link https://github.com/ngkhang
- * @filename server.ts
- * Lasted Update: 2026-01-15
- */
-
+/*
+ Author: Khang Nguyen - https://github.com/ngkhang
+ Filename: server.ts
+ Lasted Update: 2026-01-16
+*/
 import { createApp } from './app';
 
 const HOST = 'localhost';

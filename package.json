@@ -22,7 +22,9 @@
     "format": "prettier --write \"**/*.{md,json,yaml,yml}\"",
     "format:check": "prettier --check \"**/*.{md,json,yaml,yml}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tree": "npx tree -l 4 --ignore 'node_modules/,dist/,build/,test/,.git'"
+    "tree": "npx tree -l 4 --ignore 'node_modules/,dist/,build/,test/,.git'",
+    "prepare": "husky",
+    "commit": "git-cz"
   },
   "homepage": "https://github.com/ngkhang/e-commerce-node-ts#readme",
   "repository": {
@@ -33,13 +35,20 @@
     "express": "^5.2.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^20.3.1",
+    "@commitlint/config-conventional": "^20.3.1",
+    "@commitlint/cz-commitlint": "^20.3.1",
     "@eslint/js": "^9.39.2",
     "@stylistic/eslint-plugin": "^5.7.0",
     "@types/express": "^5.0.6",
     "@types/node": "^25.0.8",
+    "commitizen": "^4.3.1",
     "eslint": "^9.39.2",
     "eslint-plugin-import": "^2.32.0",
     "globals": "^17.0.0",
+    "husky": "^9.1.7",
+    "inquirer": "^9.3.8",
+    "lint-staged": "^16.2.7",
     "prettier": "^3.8.0",
     "rimraf": "^6.1.2",
     "ts-node-dev": "^2.0.0",
@@ -47,5 +56,10 @@
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.53.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   }
 }

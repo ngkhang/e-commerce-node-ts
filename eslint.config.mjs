@@ -1,10 +1,8 @@
-/**
- * @author Khang Nguyen
- * @link https://github.com/ngkhang
- * @filename eslint.config.mjs
- * Lasted Update: 2026-01-15
- */
-
+/*
+ Author: Khang Nguyen - https://github.com/ngkhang
+ Filename: eslint.config.mjs
+ Lasted Update: 2026-01-16
+*/
 // @ts-check
 import eslint from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin";

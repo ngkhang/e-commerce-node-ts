@@ -1,0 +1,24 @@
+echo "🔍 Running pre-push checks..."
+
+# Type check
+echo "📘 Type checking..."
+npm run typecheck || {
+  echo "❌ Type check failed"
+  exit 1
+}
+
+# Lint
+echo "🔧 Linting..."
+npm run lint || {
+  echo "❌ Lint failed"
+  exit 1
+}
+
+# Tests
+# echo "🧪 Running tests..."
+# npm run test || {
+#   echo "❌ Tests failed"
+#   exit 1
+# }
+
+echo "✅ All pre-push checks passed!"

@@ -1,3 +1,8 @@
+/*
+ Author: Khang Nguyen - https://github.com/ngkhang
+ Filename: prettier.config.mjs
+ Lasted Update: 2026-01-16
+*/
 /**
  * @see https://prettier.io/docs/configuration
  * @type {import("prettier").Config}

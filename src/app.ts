@@ -1,9 +1,8 @@
-/**
- * @author Khang Nguyen
- * @link https://github.com/ngkhang
- * @filename app.ts
- * Lasted Update: 2026-01-14
- */
+/*
+ Author: Khang Nguyen - https://github.com/ngkhang
+ Filename: app.ts
+ Lasted Update: 2026-01-16
+*/
 import express from 'express';
 
 export const createApp = () => {
