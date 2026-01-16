@@ -19,6 +19,8 @@
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"**/*.{md,json,yaml,yml}\"",
+    "format:check": "prettier --check \"**/*.{md,json,yaml,yml}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tree": "npx tree -l 4 --ignore 'node_modules/,dist/,build/,test/,.git'"
   },
@@ -38,6 +40,7 @@
     "eslint": "^9.39.2",
     "eslint-plugin-import": "^2.32.0",
     "globals": "^17.0.0",
+    "prettier": "^3.8.0",
     "rimraf": "^6.1.2",
     "ts-node-dev": "^2.0.0",
     "tsc-alias": "^1.8.16",

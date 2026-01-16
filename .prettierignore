@@ -1,0 +1,11 @@
+node_modules
+package-lock.json
+package.json
+dist
+build
+*.ts
+*.tsx
+*.js
+*.jsx
+*.mjs
+*.cjs
